@@ -10,7 +10,7 @@
 angular.module('udaciMealsApp')
   .service('foodFinder', function () {
     this.getMenu = function(){
-      return $.get('/data/menu.json');
+      return $.get('/menu/menu.json');
     };
 
     this.getItem = function(id) {
