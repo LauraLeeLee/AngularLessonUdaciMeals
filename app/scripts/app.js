@@ -9,4 +9,19 @@
  * Main module of the application.
  */
 angular
-  .module('udaciMealsApp', []);
+  .module('udaciMealsApp', ['ui.router'])
+  .config(['$stateProvider', '$urlProvider', function($stateProvider, $urlProvider) {
+    $urlRouterProvider.otherwise('/');
+
+    $stateProvider
+      .state('home', {
+        url: '/',
+        templateUrl: 'views/menu.html',
+        controller: 'MenuCtrl as menu'
+      })
+      .state('item', {
+        url: '/item/:id',
+        templateUrl: 'views/item.html',
+        controller: 'ItemCtrl as item'
+      });
+  }]);
