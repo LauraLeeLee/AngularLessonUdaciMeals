@@ -10,7 +10,7 @@
  */
 angular
   .module('udaciMealsApp', ['ui.router'])
-  .config(['$stateProvider', '$urlProvider', function($stateProvider, $urlProvider) {
+  .config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlProvider) {
     $urlRouterProvider.otherwise('/');
 
     $stateProvider
