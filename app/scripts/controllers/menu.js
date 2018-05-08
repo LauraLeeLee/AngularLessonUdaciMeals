@@ -8,7 +8,7 @@
  * Controller of the udaciMealsApp
  */
 angular.module('udaciMealsApp')
-  .controller('MenuCtrl', ['foodFinder', 'orderManager', function (menu) {
+  .controller('MenuCtrl', ['foodFinder', 'orderManager' function(menu) {
     var vm = this;
 
     menu.getMenu().then(function(data) {

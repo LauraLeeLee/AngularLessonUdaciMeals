@@ -5,5 +5,10 @@
   "calories": 280,
   "rating": 5,
   "description": "A sweet and tasty pudding filled with strawberries,
-  blueberries and raspberries."
+  blueberries and raspberries.",
+  "reviews": [
+    "lots of good flavor, but perhaps a bit too sweet. WOuld get it again",
+    "very good. Lots of strawberries",
+    "One of the best puddings I've ever eaten!"
+  ]
 }
